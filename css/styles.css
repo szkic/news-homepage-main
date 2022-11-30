@@ -77,6 +77,28 @@ ul {
   color: var(--grayishBlue);
 }
 
+.articles {
+  list-style: none;
+}
+
+.articles h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--grayishBlue);
+}
+
+.articles h5 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  color: var(--veryDarkBlue);
+}
+
+.articles p {
+  color: var(--darkGrayishBlue);
+  line-height: 1.73;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
