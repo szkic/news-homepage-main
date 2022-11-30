@@ -5,11 +5,13 @@
   --grayishBlue: hsl(233, 8%, 79%);
   --darkGrayishBlue: hsl(236, 13%, 42%);
   --veryDarkBlue: hsl(240, 100%, 5%);
+  --bakcgroundColor: #f2f2f2;
 }
 
 body {
-  background-color: var(--offWhite);
+  background-color: var(--bakcgroundColor);
   font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 /* h1,
@@ -23,8 +25,56 @@ ul {
   padding: 0;
 } */
 
-p {
-  font-size: 15px;
+.page-links {
+  color: var(--darkGrayishBlue);
+  list-style: none;
+  line-height: 1.73;
+}
+
+.title {
+  color: var(--veryDarkBlue);
+  font-weight: 800;
+  font-size: 56px;
+}
+
+.title-desc {
+  color: var(--darkGrayishBlue);
+  line-height: 1.73;
+}
+
+.title-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 4.375px;
+  background-color: var(--softRed);
+  color: var(--offWhite);
+}
+
+.news {
+  background-color: var(--veryDarkBlue);
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--softOrange);
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-list h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--offWhite);
+}
+
+.news-list p {
+  line-height: 1.73;
+  color: var(--grayishBlue);
 }
 
 .attribution {
