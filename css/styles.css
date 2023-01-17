@@ -26,7 +26,9 @@ h3,
 h4,
 h5,
 p,
-ul {
+ul,
+li,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -47,14 +49,24 @@ ul {
   color: var(--darkGrayishBlue);
   list-style: none;
   line-height: 1.73;
-
   display: flex;
   gap: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--darkGrayishBlue);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--softRed);
 }
 
 .main-section {
   display: flex;
   gap: 30px;
+  margin-bottom: 71px;
 }
 
 .main-section img {
@@ -64,12 +76,16 @@ ul {
 .abc {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .xyz {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  max-width: 350px;
+  gap: 29px;
 }
 
 .title {
@@ -86,25 +102,48 @@ ul {
 .title-button {
   font-weight: 700;
   font-size: 14px;
+  text-transform: uppercase;
   line-height: 1.71;
   letter-spacing: 4.375px;
   background-color: var(--softRed);
   color: var(--offWhite);
   border: 0;
+  padding: 13px 35px 11px 31px;
+}
+
+.title-button:hover,
+.title-button:focus {
+  cursor: pointer;
+  background-color: var(--veryDarkBlue);
 }
 
 .news {
   background-color: var(--veryDarkBlue);
+  min-width: 350px;
 }
 
 .news-title {
   font-weight: 700;
   font-size: 40px;
   color: var(--softOrange);
+  margin-bottom: 34px;
 }
 
 .news-list {
   list-style: none;
+  padding: 32px 24px 31px;
+}
+
+.news-elements:not(:last-child) {
+  padding-bottom: 29px;
+}
+
+.news-elements:nth-child(-n + 3) {
+  border-bottom: 1px solid var(--darkGrayishBlue);
+}
+
+.news-elements:nth-child(n + 3) {
+  padding-top: 31px;
 }
 
 .news-list h3 {
@@ -112,6 +151,12 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   color: var(--offWhite);
+  margin-bottom: 8px;
+}
+
+.news-list h3:hover {
+  cursor: pointer;
+  color: var(--softOrange);
 }
 
 .news-list p {
@@ -121,6 +166,8 @@ ul {
 
 .articles {
   list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .articles h4 {
@@ -129,11 +176,17 @@ ul {
   color: var(--grayishBlue);
 }
 
-.articles h5 {
+.article-link {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
   color: var(--veryDarkBlue);
+  text-decoration: none;
+}
+
+.article-link:hover,
+.article-link:focus {
+  color: var(--softRed);
 }
 
 .articles p {
@@ -144,7 +197,13 @@ ul {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 30px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.projects {
+  display: flex;
+  gap: 24px;
 }
